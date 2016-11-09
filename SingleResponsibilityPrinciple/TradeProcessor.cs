@@ -12,7 +12,7 @@ namespace SingleResponsibilityPrinciple
             this.tradeStorage = tradeStorage;
         }
 
-        public void ProcessTrades()
+        public void ProcessTrades(string url)
         {
             var lines = tradeDataProvider.GetTradeData();
             var trades = tradeParser.Parse(lines);
